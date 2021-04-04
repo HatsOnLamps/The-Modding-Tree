@@ -1,8 +1,8 @@
 let modInfo = {
-	name: "The Francis Tree",
-	id: "francisMod",
+	name: "The Boris Tree",
+	id: "borisMod",
 	author: "HatsOnLamps",
-	pointsName: "points",
+	pointsName: "beans",
 	discordName: "",
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
