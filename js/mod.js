@@ -1,7 +1,7 @@
 let modInfo = {
 	name: "The Francis Tree",
 	id: "francisMod",
-	author: "nobody",
+	author: "HatsOnLamps",
 	pointsName: "points",
 	discordName: "",
 	discordLink: "",
