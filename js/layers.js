@@ -25,16 +25,8 @@ addLayer("b", {
         {key: "b", description: "B: reset to spawn Borii", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
-    upgrades: {
-        rows: 1,
-        cols: 1,
-        11: {
-            title: "Begin",
-            description: "Generate 1 Bean every second.",
-            cost: new Decimal(1),
-        },
-    },
-}),
+    
+})
 
 addLayer("B", {
     name: "big borii", // This is optional, only used in a few places, If absent it just uses the layer id.
@@ -64,4 +56,4 @@ addLayer("B", {
         {key: "B", description: "shift-B: reset to merge and form Big Boris", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
-}),
+})
