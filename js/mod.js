@@ -43,6 +43,7 @@ function getPointGen() {
 
 	let gain = new Decimal(1)
 	if (hasUpgrade("b", 12)) gain = gain.times(2);
+	if (player.B.unlocked) gain = gain.times(tmp.B.effect);
 	return gain
 }
 
