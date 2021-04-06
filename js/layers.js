@@ -15,6 +15,7 @@ addLayer("b", {
     exponent: 0.5, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
+        if (hasUpgrade("b")) mult = mult.div(2)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -27,12 +28,17 @@ addLayer("b", {
     layerShown(){return true},
     upgrades: {
         rows: 1,
-        cols: 1,
+        cols: 2,
         11: {
             title: "Begin",
             description: "Generate 1 Bean every second.",
             cost: new Decimal(1),
         },
+        12: {
+            title: "I agree. Yes, I agree",
+            description: "Generate twice as many beans."
+            cost: new Decimal(2),
+        }
     },
 })
 
