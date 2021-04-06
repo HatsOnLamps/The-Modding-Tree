@@ -37,12 +37,12 @@ addLayer("b", {
             title: "I agree. Yes, I agree",
             description: "Generate twice as many beans.",
             cost: new Decimal(2),
-        }
+        },
         13: {
             title: "Focus Eyebrows",
             description: "Generate twice as many beans again.",
             cost: new Decimal(8),
-        }
+        },
     },
 })
 
