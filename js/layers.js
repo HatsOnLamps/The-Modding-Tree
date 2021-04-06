@@ -9,7 +9,7 @@ addLayer("b", {
     color: "#32a148",
     requires: new Decimal(5), // Can be a function that takes requirement increases into account
     resource: "borii", // Name of prestige currency
-    baseResource: "beans", // Name of resource prestige is based on
+    baseResource: "", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.5, // Prestige currency exponent
@@ -38,7 +38,7 @@ addLayer("B", {
     color: "#32a148",
     requires: new Decimal(10), // Can be a function that takes requirement increases into account
     resource: "big borii", // Name of prestige currency
-    baseResource: "", // Name of resource prestige is based on
+    baseResource: "borii", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.5, // Prestige currency exponent
