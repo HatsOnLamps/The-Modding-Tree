@@ -27,7 +27,7 @@ addLayer("b", {
     layerShown(){return true},
     upgrades: {
         rows: 1,
-        cols: 2,
+        cols: 3,
         11: {
             title: "Begin",
             description: "Generate 1 Bean every second.",
@@ -37,6 +37,11 @@ addLayer("b", {
             title: "I agree. Yes, I agree",
             description: "Generate twice as many beans.",
             cost: new Decimal(2),
+        }
+        13: {
+            title: "Focus Eyebrows",
+            description: "Generate twice as many beans again.",
+            cost: new Decimal(8),
         }
     },
 })
@@ -50,7 +55,7 @@ addLayer("B", {
 		points: new Decimal(0),
     }},
     color: "#32a148",
-    requires: new Decimal(5), // Can be a function that takes requirement increases into account
+    requires: new Decimal(24), // Can be a function that takes requirement increases into account
     resource: "big borii", // Name of prestige currency
     baseResource: "borii", // Name of resource prestige is based on
     baseAmount() {return player.b.points}, // Get the current amount of baseResource
