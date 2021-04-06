@@ -26,9 +26,24 @@ addLayer("b", {
     ],
     layerShown(){return true}
     upgrades: {
-        rows: 1,
-        cols: 1,
+        rows: 2,
+        cols: 2,
         11: {
+            title: "Begin",
+            description: "Generate 1 Bean every second.",
+            cost: new Decimal(1),
+        },
+        12: {
+            title: "Begin",
+            description: "Generate 1 Bean every second.",
+            cost: new Decimal(1),
+        },
+        21: {
+            title: "Begin",
+            description: "Generate 1 Bean every second.",
+            cost: new Decimal(1),
+        },
+        22: {
             title: "Begin",
             description: "Generate 1 Bean every second.",
             cost: new Decimal(1),
