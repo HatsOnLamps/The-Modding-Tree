@@ -24,8 +24,16 @@ addLayer("b", {
     hotkeys: [
         {key: "b", description: "B: reset to spawn Borii", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    layerShown(){return true}
-    
+    layerShown(){return true},
+    upgrades: {
+        rows: 1,
+        cols: 1,
+        11: {
+            title: "Begin",
+            description: "Generate 1 Bean every second.",
+            cost: new Decimal(1),
+        },
+    },
 })
 
 addLayer("B", {
@@ -44,15 +52,6 @@ addLayer("B", {
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     branches: ["b"],
     exponent: 0.5, // Prestige currency exponent
-    upgrades: {
-        rows: 1,
-        cols: 1,
-        11: {
-            title: "Begin",
-            description: "Generate 1 Bean every second.",
-            cost: new Decimal(1),
-        },
-    },
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         return mult
