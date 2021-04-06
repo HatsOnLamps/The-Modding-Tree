@@ -26,30 +26,15 @@ addLayer("b", {
     ],
     layerShown(){return true}
     upgrades: {
-        rows: 2,
-        cols: 2,
+        rows: 1,
+        cols: 1,
         11: {
             title: "Begin",
             description: "Generate 1 Bean every second.",
             cost: new Decimal(1),
         },
-        12: {
-            title: "Begin",
-            description: "Generate 1 Bean every second.",
-            cost: new Decimal(1),
-        },
-        21: {
-            title: "Begin",
-            description: "Generate 1 Bean every second.",
-            cost: new Decimal(1),
-        },
-        22: {
-            title: "Begin",
-            description: "Generate 1 Bean every second.",
-            cost: new Decimal(1),
-        },
     },
-})
+}),
 
 addLayer("B", {
     name: "big borii", // This is optional, only used in a few places, If absent it just uses the layer id.
@@ -79,4 +64,4 @@ addLayer("B", {
         {key: "B", description: "shift-B: reset to merge and form Big Boris", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true}
-})
+}),
