@@ -57,6 +57,10 @@ addLayer("B", {
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     branches: ["b"],
     exponent: 0.5, // Prestige currency exponent
+    effect() {
+        if (!unl(this.layer)) return new Decimal(1);
+        return Decimal.times(1.2);
+    },
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         return mult
