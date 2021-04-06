@@ -5,15 +5,15 @@ let modInfo = {
 	pointsName: "beans",
 	discordName: "",
 	discordLink: "",
-	initialStartPoints: new Decimal (1), // Used for hard resets and new players
+	initialStartPoints: new Decimal (5), // Used for hard resets and new players
 	
 	offlineLimit: 1,  // In hours
 }
 
 // Set your version in num and name
 let VERSION = {
-	num: "0.0",
-	name: "Literally nothing",
+	num: "0.01",
+	name: "Just starting to figure things out",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
